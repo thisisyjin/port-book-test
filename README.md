@@ -1,11 +1,14 @@
-# port-book-test
+# 📕 port-book-test
 - ortfolio Book Test ver. (Not React) 
 - 추후 제작할 **포트폴리오 사이트**의 책 3D 스타일링 + 디자인 등을 테스트 하기 위함.
+
+***
 
 # [🌐 Beta - 배포 링크](https://thisisyjin.github.io/port-book-test/)
 - 아직 정식 버전 ❌
 - 디자인 테스트를 위해 간단하게 html + css + js 스택으로 제작됨.
 
+***
 
 ## [📝 개발 일지](https://velog.io/@thisisyjin/Book-Portfolio-Project-ver0)
 - 디자인 및 주요 코드 기록함.
