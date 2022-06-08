@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[Book] Yeonjin Lee - PM</title>
+    <!-- favicon -->
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="apple-touch-icon" href="./favicon.ico" />
+
+    <link rel="stylesheet" href="inner.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="content">
+        <header class="header">
+          <div class="line"></div>
+          <h2>PM Project</h2>
+        </header>
+        <div class="content-text">
+          <div class="part-title">
+            <h3>publish</h3>
+          </div>
+          <div class="part-text">Github Page 배포 (beta)</div>
+          <div class="preview">
+            <img src="./preview.png" alt="pm preview" class="preview-img" />
+            <span class="preview-span">visit</span>
+          </div>
+        </div>
+
+        <div class="go-back-button">
+          <svg
+            width="100"
+            height="100"
+            viewBox="0 0 100 100"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="50" cy="50" r="49.5" fill="#9A0C0C" stroke="#F8F8F8" />
+            <path
+              d="M25 35C25 35 28.75 30 37.5 30C46.25 30 50 35 50 35V70C50 70 46.25 67.5 37.5 67.5C28.75 67.5 25 70 25 70V35ZM50 35C50 35 53.75 30 62.5 30C71.25 30 75 35 75 35V70C75 70 71.25 67.5 62.5 67.5C53.75 67.5 50 70 50 70V35Z"
+              stroke="white"
+              stroke-width="3.33333"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path d="M51 94L38.0096 86.5H63.9904L51 94Z" fill="white" />
+          </svg>
+        </div>
+      </div>
+      <div class="right-plane">
+        <div class="right-1"></div>
+        <div class="right-2"></div>
+        <div class="right-3"></div>
+        <div class="right-4"></div>
+        <div class="bookmark-1" data-part="about"></div>
+        <div class="bookmark-2" data-part="github"></div>
+        <div class="bookmark-3" data-part="publish"></div>
+      </div>
+    </div>
+
+    <script>
+      const $goBack = document.querySelector('.go-back-button');
+      const $preview = document.querySelector('.preview');
+
+      $goBack.addEventListener('click', () => {
+        window.open('http://127.0.0.1:5500/portfolio-book/open.html', '_self');
+      });
+
+      $preview.addEventListener('click', () => {
+        window.open('https://thisisyjin.github.io/PMv2/', '_blank');
+      });
+
+      $bookmark1 = document.querySelector('.bookmark-1');
+      $bookmark2 = document.querySelector('.bookmark-2');
+      $bookmark3 = document.querySelector('.bookmark-3');
+
+      $bookmark1.addEventListener('click', () => {
+        window.open('./inner1.html', '_self');
+      });
+      $bookmark2.addEventListener('click', () => {
+        window.open('./inner2.html', '_self');
+      });
+      $bookmark3.addEventListener('click', () => {
+        window.open('./inner3.html', '_self');
+      });
+    </script>
+  </body>
+</html>

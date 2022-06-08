@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[Book] Yeonjin Lee</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap"
+      rel="stylesheet"
+    />
+    <!-- favicon -->
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="apple-touch-icon" href="./favicon.ico" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="left-button">
+        <svg
+          class="button-svg"
+          width="56"
+          height="102"
+          viewBox="0 0 56 102"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1.88187 53.8461C0.296119 52.28 0.29612 49.72 1.88187 48.1539L49.1893 1.4344C51.7163 -1.06119 56 0.728876 56 4.28045L56 97.7195C56 101.271 51.7163 103.061 49.1893 100.566L1.88187 53.8461Z"
+            fill="#505050"
+          />
+        </svg>
+      </div>
+      <div class="book-container">
+        <div class="book">
+          <div class="front-cover">
+            <div class="book-title">yeonjinLee</div>
+            <div class="front-1"></div>
+            <div class="front-2"></div>
+          </div>
+          <div class="back-cover"></div>
+          <div class="right-plane">
+            <div class="right-1"></div>
+            <div class="right-2"></div>
+            <div class="right-3"></div>
+            <div class="right-4"></div>
+          </div>
+          <div class="right-shadow"></div>
+          <div class="top-plane">
+            <div class="top-1"></div>
+            <div class="top-2"></div>
+            <div class="top-3"></div>
+            <div class="top-4"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-button">
+        <svg
+          class="button-svg"
+          width="56"
+          height="102"
+          viewBox="0 0 56 102"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M54.1181 48.1539C55.7039 49.72 55.7039 52.28 54.1181 53.8461L6.81069 100.566C4.2837 103.061 0 101.271 0 97.7196L0 4.28046C0 0.728882 4.28369 -1.06119 6.81069 1.4344L54.1181 48.1539Z"
+            fill="#505050"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <script>
+      const $book = document.querySelector('.book');
+      const $nextBtn = document.querySelector('.right-button');
+
+      $book.addEventListener('click', () => {
+        window.open('./open.html', '_self'); // react Link
+      });
+      $nextBtn.addEventListener('click', () => {
+        window.open('./open.html', '_self'); // react Link
+      });
+    </script>
+  </body>
+</html>

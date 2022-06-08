@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  background: linear-gradient(
+    243.18deg,
+    #9e9a9a 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.wrap {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.book-container {
+  transform: translateY(-110px) scale(0.7);
+  /* matrix(1, -0.14, 0, 0.99, 0, 0); */
+}
+
+.book {
+  position: relative;
+  top: 40px;
+  width: 825px;
+  height: 950px;
+  cursor: pointer;
+  filter: drop-shadow(0px 30px 10px rgba(0, 0, 0, 0.25));
+  transition: all 0.35s ease-in;
+}
+
+.book:hover {
+  transform: translateY(-20px);
+  filter: drop-shadow(0px 40px 20px rgba(0, 0, 0, 0.25));
+}
+
+.book:hover .page {
+  background-color: #fff;
+}
+.book:hover .title {
+  color: #a71111;
+}
+.book:hover .icon {
+  display: block;
+}
+
+.front-cover {
+  position: absolute;
+  width: 300.88px;
+  height: 685px;
+  left: 0px;
+  top: 300px;
+
+  background: #a71111;
+  transform: matrix(1, -1, 0, 0.82, 0, 0);
+}
+
+.front-cover .cover-page {
+  position: absolute;
+  width: 296px;
+  height: 683px;
+  right: 0;
+  bottom: 0;
+  background: #ffffff;
+}
+
+.front-cover .cover-page .cover-shadow {
+  position: absolute;
+  width: 84.85px;
+  height: 683px;
+  right: 0;
+  background: rgba(225, 225, 225, 0.2);
+}
+
+.back-cover {
+  position: absolute;
+  width: 443px;
+  height: 580px;
+  left: 367px;
+  top: 174px;
+  background: #a71111;
+  transform: matrix(1, 0.14, -0.01, 0.99, 0, 0);
+}
+
+.page {
+  position: absolute;
+  width: 441.88px;
+  height: 578.48px;
+  left: 294px;
+  top: 240px;
+  background: #fafafa;
+  transform: matrix(1, 0.14, -0.02, 0.99, 0, 0);
+}
+
+.page .icon {
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.page .icon svg {
+  width: 120px;
+}
+
+.page .title {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'La Belle Aurore', cursive;
+  font-size: 52px;
+}
+
+.top-plane {
+  position: absolute;
+  width: 542px;
+  height: 71.84px;
+  left: 283px;
+  top: 173px;
+  background: #ffffff;
+  transform: matrix(0.81, 0.12, -0.98, 0.98, 0, 0);
+}
+
+.right-plane {
+  position: absolute;
+  width: 71.47px;
+  height: 700px;
+  left: 733px;
+  top: 177px;
+  background: #ffffff;
+  transform: matrix(1, -0.95, -0.01, 0.82, 0, 0);
+}
+
+.right-shadow {
+  position: absolute;
+  width: 71.47px;
+  height: 500px;
+  background: rgba(197, 197, 197, 0.4);
+}
+
+.top-1 {
+  position: absolute;
+  width: 542px;
+  height: 13.75px;
+  background: #f8f8f8;
+}
+
+.top-2 {
+  position: absolute;
+  width: 542px;
+  height: 13.75px;
+  top: 19px;
+  background: #f8f8f8;
+}
+
+.top-3 {
+  position: absolute;
+  width: 542px;
+  height: 13.75px;
+  top: 38px;
+  background: #f8f8f8;
+}
+
+.top-4 {
+  position: absolute;
+  width: 542px;
+  height: 13.75px;
+  top: 57px;
+  background: #f8f8f8;
+}
+
+.right-1 {
+  position: absolute;
+  width: 13.75px;
+  height: 700px;
+  background: #f8f8f8;
+}
+.right-2 {
+  position: absolute;
+  width: 13.75px;
+  height: 700px;
+  left: 20px;
+  background: #f8f8f8;
+}
+.right-3 {
+  position: absolute;
+  width: 13.75px;
+  height: 700px;
+  left: 39px;
+  background: #f8f8f8;
+}
+.right-4 {
+  position: absolute;
+  width: 13.75px;
+  height: 700px;
+  left: 58px;
+  background: #f8f8f8;
+}
+
+/* buttons */
+
+.left-button {
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.right-button {
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.left-button:hover,
+.right-button:hover {
+  opacity: 0.8;
+}
+
+.read-button {
+  display: none;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.read-button button {
+  cursor: pointer;
+  font-size: 55px;
+  border: none;
+  color: #fff;
+  background-color: #a71111;
+  font-weight: bold;
+  padding: 30px 100px;
+  border-radius: 100px;
+}
+
+.read-button button:hover {
+  background-color: #a7111190;
+}
